@@ -7,15 +7,16 @@ local map = vim.keymap.set
 --Gitsigns
 map({ "n" }, "<leader>gn", "<cmd> Gitsigns next_hunk <cr>", { desc = "Next hunk" })
 map({ "n" }, "<leader>gp", "<cmd> Gitsigns prev_hunk <cr>", { desc = "Previous hunk" })
+map({ "n" }, "<leader>gb", "<cmd> Gitsigns blame_line <cr>", { desc = "Blame Line" })
 
 --Comment
 map({ "n" }, "<leader>/", "<cmd> gcc <cr>", { desc = "Comment line" })
 
---Buffers 
+--Buffers
 map({ "n" }, "<S-tab>", "<cmd> BufferLineCyclePrev <cr>", { desc = "Previous buffer" })
 map({ "n" }, "<tab>", "<cmd> BufferLineCycleNext <cr>", { desc = "Next buffer" })
 
---Telescope 
+--Telescope
 map({ "n" }, "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find Files" })
 map({ "n" }, "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = "Live Grep" })
 
